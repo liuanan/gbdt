@@ -1,0 +1,13 @@
+#test/GBDTTest.java
+
+#-t 树的数目
+#-f 特征抽样比例
+#-s 样本抽样比例
+#-b 是否是0、1特征
+#-d 一棵树分裂次数上限
+#-n 一个节点包含样本的数目下限
+#-i 训练样本文件路径
+#-m 模型文件路径
+#-t 测试数据路径
+train -t 300 -f 0.6 -s 0.6 -b false -d 30 -n 5 -i data/train -m data/model
+test -m data/model -t data/test 
