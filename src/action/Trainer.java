@@ -99,7 +99,7 @@ public class Trainer {
 				}
 			}
 			if (tree.get(leftChildID+1).getSamplesSize() >= p.getMinNumInNode()*2) {
-				lossFunction.setLossFunctionValue(tree.get(leftChildID+1), corpus);
+//				lossFunction.setLossFunctionValue(tree.get(leftChildID+1), corpus);
 				lossFunction.minLossFunction(tree.get(leftChildID+1), featureSampleList, corpus, p);
 				if (!(tree.get(leftChildID+1).getTmpTree() == null)) {
 					heap.add(tree.get(leftChildID+1));
